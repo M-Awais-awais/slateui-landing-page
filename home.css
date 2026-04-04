@@ -1,0 +1,340 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ body {
+    background-color: white; 
+    margin-top: 0px;
+    background-image: url(image/figma_project.jpg);
+    background-size: 100% 600px;
+  
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+  
+}
+
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 150px;
+    padding-right: 50px;
+    display: flex;
+    
+   
+}
+
+
+#navbar a {
+    margin-right: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#navbar {
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* When page is scrolled past threshold, apply a white background and dark text */
+#navbar.scrolled{
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#navbar.scrolled a {
+    color: #817979;
+}
+
+#navbar.scrolled img{
+    /* invert icons on white navbar so they remain visible */
+    filter: invert(1);
+}
+
+#navbar img {
+    width: 30px;
+    cursor: pointer;
+    float: left;
+    margin-left: 50px;
+    transition: filter 0.25s ease;
+}
+#h1{
+    text-indent: 20px;
+    width: 300px;
+    color: white;
+    font-weight: bolder;
+    margin: 100px auto ;
+     text-align-last: center;
+    
+    padding-top: 200px;
+}
+#h1 p{
+    color: white;
+    font-size: 14px;
+   font-family:'Times New Roman', serif;
+    width:290px ;
+    margin-top: 20px;
+    text-indent: 2px;
+
+   
+}
+button {
+   
+    padding: 12px 25px;
+    background-color: #1862b8;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.features{
+    text-indent: 20px;
+    width: 300px;
+    color: black;
+    font-weight:lighter;
+    margin: 100px auto ;
+     text-align-last: center;
+     margin-top: 300px;
+     
+}
+.features-boxes {
+    text-align: center;        /* centers the 3 blocks */
+    margin-top: 40px;
+}
+
+#p1, #p2, #p3 {
+    width: 200px;
+    min-height: 220px;
+    background-color: white;
+    display: inline-block;
+    margin: 0 25px;            /* equal spacing */
+    padding: 20px;
+    border-radius: 10px;       /* optional – nicer look */
+    vertical-align: top;
+    text-align: center;  
+        /* centers text inside */
+}
+
+#p1 h1, #p2 h1, #p3 h1 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 15px;
+    text-align-last: center;
+}
+
+#p1 p, #p2 p, #p3 p {
+    font-size: 14px;
+    color: #444;
+}
+#video{
+    margin: 20px auto;
+    width: 150px;
+    padding-right: 400px;
+}
+
+#b1{
+    width: 300px;
+    
+    font-size: 18px;
+    color: black;
+    margin-left: 200px;
+   
+}
+#b1 p{
+    width: 250px;
+    font-size: 17px;
+    color: #444;
+    font-weight: lighter;
+    text-align-last: center;
+}
+#b1 h1{
+    font-weight: lighter;
+    font-family: Calibri ;
+   
+}
+
+#b2 img{
+    width: 300px;
+    height: auto;
+   
+   margin-right: 200px;
+   
+
+}
+#main2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 100px auto;
+}
+#b3{
+   margin:  auto;
+   width: 200px;
+}
+#b4{
+    width: 400px;
+    
+    
+    color: black;
+    margin: 100px auto;
+   
+}
+#b4 p{
+    width: 300px;
+    font-size: 17px;
+    color: #444;
+    font-weight: lighter;
+    text-align-last: center;
+}
+#b4 h1{
+    font-weight: lighter;
+    font-family: Calibri ;
+    text-indent: 50px;
+   
+}
+
+#b5{
+   margin:  100px auto;
+   width: 500px;
+}
+
+.pricing-section {
+    background-color: #2f2c40;   
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.pricing-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.pricing-section p {
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+.pricing-boxes {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+.price-card {
+    background-color: white;
+    width: 260px;
+    padding: 35px 20px;
+    border-radius: 15px;
+    text-align: center;
+   color: #555
+}
+
+.price-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price-card .subtitle {
+    font-size: 12px;
+   color: #555;
+    margin-bottom: 20px;
+}
+
+.price-card .price {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.price-card .price span {
+    font-size: 20px;
+}
+
+.per-month {
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.price-card ul li {
+    margin: 10px 0;
+    color: #555;
+}
+
+.price-card button {
+    background-color: #3f89f1;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.price-card.active  {
+    background-color: white;
+   color: #555
+}
+
+.price-card.active ul li {
+    color: #555
+}
+
+.price-card.active .subtitle,
+.price-card.active .per-month {
+   color: #555
+}
+
+.price-card.active button {
+    background-color: #3f89f1;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+/* .price-card:hover {
+    background-color: rgb(11, 159, 218);
+    color: white;
+}
+
+.price-card:hover ul li {
+    color: white;
+} */
+
+@keyframes animation{
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: lightblue;
+    }
+}
+.price-card:hover{
+    animation-name: animation;
+    
+ 
+  animation-duration: 4s;
+}
